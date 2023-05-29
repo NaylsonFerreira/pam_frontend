@@ -1,0 +1,63 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "next",
+    "prettier"
+  ],
+  "settings": {
+    "next": {
+      "rootDir": "src/"
+    }
+  },
+  "rules": {
+    "prefer-template": 1,
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxEOF": 0
+      }
+    ],
+    "no-trailing-spaces": [
+      "error",
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 100
+      }
+    ],
+    "camelcase": [
+      "error",
+      {
+        "ignoreDestructuring": true
+      }
+    ],
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": [
+          "none",
+          "all",
+          "multiple",
+          "single"
+        ]
+      }
+    ]
+  },
+  "plugins": [
+    "unused-imports",
+    "sort-imports-es6-autofix"
+  ]
+}
